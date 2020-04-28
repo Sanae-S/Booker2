@@ -1,0 +1,7 @@
+<%= render 'books/profile.new', book:@book, user:@user %>
+<h2>Books</h2>
+<% @books.each do |book| %>
+<%= attachment_image_tag book.user, :profile_image, fallback: "no_image.jpg", size: "100x100" %>
+<p><%= book.title %></p>
+<p><%= book.body %></p>
+<% end %>
