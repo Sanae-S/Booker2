@@ -7,7 +7,7 @@ before_action :correct_user, only: [:edit, :update, :destroy]
     @books = Book.all
     @book_new = Book.new
     @book = Book.new
-    @user = User.all
+    @user = current_user
   end
 
   def show

@@ -4,7 +4,7 @@ before_action :current_user?, only: [:edit, :update]
 
   def index
     @users = User.all
-
+    @user = current_user
     @book = Book.new
   end
 
