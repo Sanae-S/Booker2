@@ -34,7 +34,7 @@
             <span class="glyphicon glyphicon-book" > Books </span>
             <% end %>
           </li>
-          <li><%= link_to destroy_user_session_path(current_user.id), method: :delete ,class:"icon-bar" do %>
+          <li><%= link_to destroy_user_session_path, method: :delete ,class:"icon-bar" do %>
             <span class="glyphicon glyphicon-log-out" > logout </span>
             <% end %>
           </li>

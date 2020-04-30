@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   resources :books
   get 'home/about' =>"home#about"
   root 'home#index'
+  get 'destroy_user_session_path' => 'root_path'
 end
